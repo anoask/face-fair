@@ -11,8 +11,8 @@ def balancedDataset():
     # These criterias are met by the following steps:
     # 1. Read the combined labels file and store data by identity. (Image name, attributes, landmarks, identity)
     # Define paths
-    input_file_path = '/Users/jluke/Desktop/FacialShit/combinedLabels.txt'
-    output_file_path = '/Users/jluke/Desktop/FacialShit/reducedSet.txt'
+    input_file_path = '/Users/jluke/Desktop/Facial/combinedLabels.txt'
+    output_file_path = '/Users/jluke/Desktop/Facial/reducedSet.txt'
 
     # Step 1: Read the combined labels file and store data by identity
     data_by_identity = {} # Dictionary to store data by identity
@@ -142,10 +142,10 @@ def labelConcatenation():
     # This helps in creating a single file that can be used for further processing or analysis.
 
     # Define paths to label files
-    landmarkLabelFilePath = '/Users/jluke/Desktop/FacialShit/list_landmarks_align_celeba.txt'
-    identityLabelFilePath = '/Users/jluke/Desktop/FacialShit/identity_CelebA.txt'
-    featureLabelFilePath = '/Users/jluke/Desktop/FacialShit/list_attr_celeba.txt'
-    outputFilePath = '/Users/jluke/Desktop/FacialShit/combinedLabels.txt'
+    landmarkLabelFilePath = '/Users/jluke/Desktop/Facial/list_landmarks_align_celeba.txt'
+    identityLabelFilePath = '/Users/jluke/Desktop/Facial/identity_CelebA.txt'
+    featureLabelFilePath = '/Users/jluke/Desktop/Facial/list_attr_celeba.txt'
+    outputFilePath = '/Users/jluke/Desktop/Facial/combinedLabels.txt'
 
     # Open the output file for writing
     with open(outputFilePath, 'w') as outputFile:
@@ -191,7 +191,7 @@ def countMaleFemaleIdentities():
     # This function was used to analyze any imbalances with respect to gender in the dataset.
 
     # Define path to the combined labels file
-    combined_label_file_path = '/Users/jluke/Desktop/FacialShit/combinedLabels.txt'
+    combined_label_file_path = '/Users/jluke/Desktop/Facial/combinedLabels.txt'
 
     # Create a set to store unique identities
     unique_identities = set()
@@ -228,7 +228,7 @@ def identityNumRange():
     # i.e., Image count of 20 has a frequency of 1044 identities, so we have a lot of identities to evaluate and balance.
 
     # Define path to the combined labels file
-    combined_label_file_path = '/Users/jluke/Desktop/FacialShit/combinedLabels.txt'
+    combined_label_file_path = '/Users/jluke/Desktop/Facial/combinedLabels.txt'
 
     # Create a dictionary to store the frequency count of each identity
     identity_frequency = defaultdict(int)
